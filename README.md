@@ -10,6 +10,7 @@ T全拼为Template，与MVC中的V功能相同，负责封装构造要返回的h
 
 ## 创建django项目：
 django-admin startproject bookmanger
+## 运行manage.py文件
 cd到bookmanger中 执行python manage.py runserver
 
 ## 创建子应用:
@@ -19,6 +20,11 @@ cd到bookmanger中 执行python manage.py startapp book
 bookmanger/settings.py 设置里面添加    
 'book', # 方案一
 'book.apps.BookConfig'  # 方案二
+
+## 生成迁移文件
+python manage.py makemigrations
+## 执行迁移文件
+python manage.py migrate
 
 
 

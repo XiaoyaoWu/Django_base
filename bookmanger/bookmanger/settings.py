@@ -24,7 +24,7 @@ SECRET_KEY = 'pc!^^r2z_9q@2var1y+f(^^ofatl6=9zk&=xd*dboe*hbu#c$8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+# 默认是127.0.0.1
 ALLOWED_HOSTS = []
 
 
@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'book', # 方案一
-    'book.apps.BookConfig'  # 方案二
+    'book',  # 方案一
+    # 'book.apps.BookConfig'  # 方案二
 ]
 
 MIDDLEWARE = [
@@ -75,6 +75,7 @@ WSGI_APPLICATION = 'bookmanger.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# sqlite3关系型数据库
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
