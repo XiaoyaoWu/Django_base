@@ -11,6 +11,10 @@ from django.http import HttpRequest
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('逍遥踏千秋')
-
+    # return HttpResponse('逍遥踏千秋')
+    # context 理解为将视图中的数据传递给HTML（模版）
+    context = {
+        'name': '马上双十一,点击有惊喜'
+    }
+    return render(request, 'book/index.html', context=context)
 
