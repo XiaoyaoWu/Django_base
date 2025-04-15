@@ -21,10 +21,15 @@ bookmanger/settings.py 设置里面添加
 'book', # 方案一
 'book.apps.BookConfig'  # 方案二
 
+## models.py 创建类，即数据表后需要生成、执行迁移文件
 ## 生成迁移文件
 python manage.py makemigrations
 ## 执行迁移文件
 python manage.py migrate
+
+## 创建超级管理员用户
+python manage.py createsuperuser
+
 
 
 
