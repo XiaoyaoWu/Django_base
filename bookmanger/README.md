@@ -30,6 +30,10 @@ python manage.py migrate
 ## 创建超级管理员用户
 python manage.py createsuperuser
 
+## 添加index路由
+urls.py 里新增 path('index/', index)
+
+
 
 
 
