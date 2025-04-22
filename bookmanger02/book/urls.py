@@ -1,7 +1,7 @@
 from django.urls import path
-f
+from book.views import index
 urlpatterns = [
-    path()
+    path('home/',index)
 ]
 
 
